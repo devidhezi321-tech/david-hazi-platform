@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#172a25">
+<title>החנות של דוד חזי | מוצאים את הכלי שמתאים לך</title>
+<style>
+:root{--ink:#172a25;--muted:#66736e;--paper:#f7f5ef;--card:#fffefa;--line:#e3e5dc;--green:#1f5a46;--mint:#dcece3;--gold:#e8bd68;--soft:#f1eadb;--shadow:0 16px 45px rgba(23,42,37,.08)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,"Noto Sans Hebrew",sans-serif;line-height:1.6}button,input,textarea,select{font:inherit}button{cursor:pointer}.wrap{width:min(1120px,92%);margin:auto}.topbar{padding:18px 0;display:flex;align-items:center;justify-content:space-between;gap:16px}.brand{font-weight:800;font-size:1.15rem;letter-spacing:-.03em;display:flex;align-items:center;gap:10px}
+.brand span{display:inline-grid;place-items:center;position:relative;flex:0 0 46px;width:46px;height:46px;border-radius:13px;margin-left:0;
+  color:#f8e8bd;background:linear-gradient(145deg,#182d2a 0%,#0b1716 72%);border:1px solid #b99a59;
+  box-shadow:0 5px 14px #10201d2b,inset 0 0 0 3px #ffffff0a;
+  font-family:Georgia,"Times New Roman",serif;font-size:20px;font-weight:700;letter-spacing:-2px;text-shadow:0 1px 2px #0008}
+.brand span:after{content:"";position:absolute;inset:4px;border:1px solid #c7a86b66;border-radius:9px;pointer-events:none}
+.top-link{color:var(--green);text-decoration:none;font-weight:700}.hero{background:var(--ink);color:#fff;border-radius:28px;padding:clamp(28px,6vw,68px);position:relative;overflow:hidden}.hero:after{content:"";position:absolute;width:360px;height:360px;border:1px solid #ffffff18;border-radius:50%;left:-120px;top:-140px;box-shadow:0 0 0 35px #ffffff08,0 0 0 75px #ffffff05}.eyebrow{color:var(--gold);font-weight:800;font-size:.9rem;letter-spacing:.03em}.hero h1{font-size:clamp(2.1rem,5vw,4.25rem);line-height:1.12;max-width:780px;margin:14px 0 18px;letter-spacing:-.045em}.hero p{font-size:1.12rem;color:#e1e9e4;max-width:700px;margin:0 0 28px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:13px;padding:13px 20px;background:var(--gold);color:#172a25;font-weight:800;text-decoration:none;transition:transform .15s,opacity .15s}.btn:hover{transform:translateY(-1px)}.btn.secondary{background:transparent;border:1px solid #ffffff55;color:white}.btn.green{background:var(--green);color:white}.btn.light{background:var(--mint);color:var(--green)}.hero-actions{display:flex;flex-wrap:wrap;gap:12px}.trust-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px;color:#d5e0da;font-size:.9rem}.trust-row span{border:1px solid #ffffff24;padding:6px 11px;border-radius:99px}.section{padding:64px 0}.section-head{max-width:740px;margin-bottom:28px}.section-head h2{font-size:clamp(1.7rem,3vw,2.6rem);line-height:1.2;margin:0 0 12px;letter-spacing:-.03em}.section-head p{margin:0;color:var(--muted)}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.step,.topic,.panel,.product,.faq-item{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:22px}.step-num{display:grid;place-items:center;width:38px;height:38px;border-radius:12px;background:var(--mint);color:var(--green);font-weight:900;margin-bottom:12px}.step h3,.topic h3,.product h3{margin:0 0 7px}.step p,.topic p,.product p{margin:0;color:var(--muted);font-size:.96rem}.topics{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}.topic{display:block;text-align:right;width:100%;color:inherit;transition:border-color .15s,box-shadow .15s,transform .15s}.topic:hover{transform:translateY(-2px);border-color:#a5c6b4}.topic.selected{border:2px solid var(--green);background:#f0f7f2;box-shadow:0 0 0 3px #1f5a4610}.topic-top{display:flex;align-items:center;gap:11px;margin-bottom:10px}.emoji{width:42px;height:42px;border-radius:13px;background:var(--soft);display:grid;place-items:center;font-size:1.3rem;flex-shrink:0}.tick{margin-right:auto;border:1px solid var(--line);width:23px;height:23px;border-radius:7px;display:grid;place-items:center;color:white}.selected .tick{background:var(--green);border-color:var(--green)}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.field{display:flex;flex-direction:column;gap:7px}.field.full{grid-column:1/-1}label,.field-label{font-weight:800;font-size:.96rem}.hint{font-size:.86rem;color:var(--muted);font-weight:400}.input,textarea,select{width:100%;border:1px solid #d8ded7;border-radius:12px;background:#fff;padding:12px 13px;color:var(--ink);outline:none}.input:focus,textarea:focus,select:focus{border-color:var(--green);box-shadow:0 0 0 3px #1f5a4614}textarea{min-height:110px;resize:vertical}.choices{display:flex;flex-wrap:wrap;gap:9px}.choice{display:flex;align-items:center;gap:8px;border:1px solid var(--line);border-radius:12px;padding:10px 12px;background:#fff;font-weight:500}.choice:has(input:checked){border-color:var(--green);background:#eff7f1}.choice input{accent-color:var(--green)}.panel{padding:clamp(20px,4vw,34px);box-shadow:var(--shadow)}.panel + .panel{margin-top:18px}.form-actions{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-top:24px}.fine{font-size:.86rem;color:var(--muted)}.products{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.product{display:flex;flex-direction:column;gap:12px}.product .emoji{width:48px;height:48px}.product .tag{display:inline-flex;align-self:flex-start;border-radius:99px;background:var(--mint);color:var(--green);padding:4px 10px;font-size:.8rem;font-weight:800}.product .btn{margin-top:auto;width:100%}.product small{color:var(--muted)}.callout{background:#eee8d9;border-radius:22px;padding:28px;display:flex;align-items:center;justify-content:space-between;gap:24px}.callout h2{margin:0 0 8px;font-size:1.7rem}.callout p{margin:0;color:#59645e;max-width:680px}.faq{display:grid;grid-template-columns:1fr 1fr;gap:12px}.faq-item h3{margin:0 0 8px;font-size:1.05rem}.faq-item p{margin:0;color:var(--muted)}footer{background:var(--ink);color:#dbe5df;padding:30px 0;margin-top:30px}.footer-inner{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}.footer-inner p{margin:4px 0;color:#b7c7be;font-size:.9rem}.result{display:none;border:2px solid var(--green);background:#f0f7f2;border-radius:18px;padding:22px;margin-top:20px}.result.show{display:block}.result h3{margin-top:0}.result ul{padding-right:22px}.notice{padding:12px 14px;background:#f5f0e4;border-radius:12px;color:#62543b;font-size:.9rem;margin-top:14px}.wa-note{font-size:.9rem;color:var(--muted);margin-top:12px}.mobile-sticky{display:none}
+@media(max-width:760px){.steps,.topics,.products,.faq{grid-template-columns:1fr}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.hero{border-radius:20px}.section{padding:44px 0}.callout{align-items:flex-start;flex-direction:column}.topbar{padding:12px 0}.mobile-sticky{display:block;position:sticky;bottom:8px;z-index:5;margin:0 auto 8px;width:92%}.mobile-sticky .btn{width:100%;box-shadow:0 8px 24px #172a2540}}
+</style>
+
+<style>
+/* David Hazi signature + expanded contact experience */
+.topbar{position:relative;gap:18px;flex-wrap:wrap}
+.signature{font-family:"Brush Script MT","Segoe Script",cursive;font-style:italic;font-weight:700;letter-spacing:.035em;font-size:clamp(1.35rem,2.5vw,2rem);color:var(--green);white-space:nowrap;text-shadow:0 1px 0 #fff}
+.signature small{display:block;font-family:Arial,sans-serif;font-size:.58rem;letter-spacing:.16em;text-transform:uppercase;text-align:left;color:var(--muted);font-style:normal;font-weight:700;margin-top:-5px}
+.lang-wrap{display:flex;align-items:center;gap:8px}
+.lang-wrap label{font-size:.85rem;color:var(--muted)}
+.lang-select{width:auto;min-width:145px;padding:9px 32px 9px 12px;border-radius:12px;background:#fff;border:1px solid var(--line);font-weight:700}
+.contact-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:18px}
+.contact-card{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:clamp(20px,4vw,32px)}
+.contact-card h3{font-size:1.35rem;margin:0 0 8px}
+.contact-card p{color:var(--muted)}
+.schedule-list{display:grid;gap:10px;margin:18px 0}
+.schedule-list .choice{align-items:flex-start}
+.schedule-list input{margin-top:6px}
+.important{background:#fff1df;border:1px solid #f0d0a4;color:#704318;padding:15px 17px;border-radius:14px;font-weight:800}
+.support-box{background:var(--ink);color:#fff;border-radius:22px;padding:clamp(20px,4vw,32px)}
+.support-box p{color:#d5e0da}
+.bank-details{display:grid;gap:10px;margin-top:16px}
+.bank-row{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px;background:#ffffff10;border:1px solid #ffffff20;border-radius:12px;flex-wrap:wrap}
+.bank-row span{overflow-wrap:anywhere}
+.copy-mini{border:1px solid #ffffff50;background:transparent;color:white;border-radius:9px;padding:7px 11px;font-weight:700}
+.microcopy{font-size:.87rem;color:var(--muted)}
+.footer-signature{font-family:"Brush Script MT","Segoe Script",cursive;font-size:1.5rem;font-style:italic;color:#e8bd68}
+@media(max-width:760px){.contact-grid{grid-template-columns:1fr}.topbar{align-items:flex-start}.lang-wrap{width:100%;justify-content:space-between}.lang-select{flex:1;max-width:220px}.signature small{text-align:right}}
+</style>
+
+
+<style>
+.appointment-star{position:fixed;right:18px;bottom:88px;z-index:20;background:#e8bd68;color:#172a25;border-radius:999px;padding:11px 16px;box-shadow:0 8px 25px #172a2540;text-decoration:none;font-weight:800;display:flex;align-items:center;gap:7px;border:1px solid #d6a74d}
+.appointment-star:hover{transform:translateY(-2px)}
+.qr-card{display:flex;align-items:center;gap:20px;flex-wrap:wrap;background:#fffefa;border:1px solid #e3e5dc;border-radius:20px;padding:22px;margin-top:20px}
+.qr-card canvas,.qr-card img{width:176px;height:176px;image-rendering:pixelated;border-radius:10px;background:white}
+.qr-copy{flex:1;min-width:220px}
+.qr-copy h3{margin:0 0 8px}
+.qr-copy p{margin:0 0 12px;color:#66736e}
+.qr-actions{display:flex;gap:8px;flex-wrap:wrap}
+.qr-actions button{border:0;border-radius:10px;padding:10px 13px;font-weight:700}
+@media(max-width:600px){.appointment-star{right:10px;bottom:76px;font-size:.88rem;padding:10px 12px}.qr-card{justify-content:center}.qr-copy{flex-basis:100%}}
+</style>
+
+</head>
+<body>
+<header class="wrap topbar">
+  <div class="brand"><span aria-label="DH logo" title="David Hazi">DH</span> פלטפורמה לתיאום פגישות עם דוד חזי</div>
+  <div class="signature" aria-label="David Hazi">David Hazi<small>Founder · Digital tools</small></div>
+  <div class="lang-wrap">
+    <label for="languageSelect" data-i18n="languageLabel">שפה / Language</label>
+    <select class="lang-select" id="languageSelect" aria-label="Choose language">
+      <option value="he">עברית</option><option value="en">English</option><option value="ar">العربية</option>
+      <option value="hi">हिन्दी</option><option value="uk">Українська</option><option value="ru">Русский</option>
+      <option value="es">Español</option><option value="fr">Français</option><option value="de">Deutsch</option>
+      <option value="pt">Português</option><option value="it">Italiano</option>
+    </select>
+  </div>
+  <a class="top-link" href="#appointment" data-i18n="navAppointment">בדיקת התאמה ←</a>
+</header>
+<main class="wrap">
+  <section class="hero">
+    <div class="eyebrow">כלי דיגיטלי. התאמה אישית. דרך משלך.</div>
+    <h1>לא צריך עוד אתר.<br>צריך את הכלי הנכון עבורך.</h1>
+    <p>ברוכים הבאים לחנות של דוד חזי — מקום לגלות אפליקציות ואתרים שנועדו לעזור לך לחשוב, להתפתח, ליצור שינוי ולהתקדם בתחום שחשוב לך. בוחרים כיוון, עונים על כמה שאלות, ובודקים יחד מה עשוי להתאים.</p>
+    <div class="hero-actions">
+      <a class="btn" href="#fit-check" onclick="document.getElementById('fit-check').scrollIntoView({behavior:'smooth'});return false">מתחילים בבדיקת התאמה <span>←</span></a>
+      <a class="btn secondary" href="#החנות">לגלות את הכיוונים</a>
+    </div>
+    <div class="trust-row"><span>✓ רכישה חד־פעמית</span><span>✓ שיחת התאמה אישית</span><span>✓ פגישה פרונטלית ללא עלות, בתיאום</span></div>
+  </section>
+
+  <section class="section">
+    <div class="section-head"><h2>איך זה עובד?</h2><p>תהליך פשוט שמתחיל במה שמעניין אותך — ולא במוצר שמנסים למכור לך.</p></div>
+    <div class="steps">
+      <article class="step"><div class="step-num">1</div><h3>בוחרים כיוון</h3><p>מסמנים את הנושאים, המטרות והאתגרים שמעסיקים אותך כרגע. אפשר לבחור כמה נושאים.</p></article>
+      <article class="step"><div class="step-num">2</div><h3>בודקים התאמה</h3><p>משאירים כמה פרטים ומסבירים במילים שלך מה היית רוצה לשנות או להשיג.</p></article>
+      <article class="step"><div class="step-num">3</div><h3>מתאימים כלי</h3><p>מתאמים שיחה, ואם זה מתאים — גם פגישה פרונטלית ללא עלות. בוחנים יחד איזה אתר או אפליקציה יכולים להתאים.</p></article>
+    </div>
+  </section>
+
+  <section class="section" id="החנות">
+    <div class="section-head"><h2>איזה כיוון מדבר אליך?</h2><p>אלה תחומי עניין לבחירתך, לא אבחון ולא התחייבות לרכישה. אפשר לסמן כמה אפשרויות ולהוסיף כיוון משלך.</p></div>
+    <div class="topics" id="topics">
+      <button class="topic" type="button" data-topic="השראה ומוטיבציה"><div class="topic-top"><span class="emoji">✨</span><h3>השראה ומוטיבציה</h3><span class="tick">✓</span></div><p>למצוא נקודת מבט חדשה, להחזיר תנופה ולהתחבר למה שחשוב.</p></button>
+      <button class="topic" type="button" data-topic="סיפורים ומשמעות"><div class="topic-top"><span class="emoji">📖</span><h3>סיפורים ומשמעות</h3><span class="tick">✓</span></div><p>ללמוד מסיפורים, חוויות, רעיונות ותובנות מהחיים.</p></button>
+      <button class="topic" type="button" data-topic="אחריות והרגלים"><div class="topic-top"><span class="emoji">🧭</span><h3>אחריות והרגלים</h3><span class="tick">✓</span></div><p>לבנות שגרה, לקבל החלטות ולהפוך כוונות לפעולות.</p></button>
+      <button class="topic" type="button" data-topic="התפתחות אישית"><div class="topic-top"><span class="emoji">🌱</span><h3>התפתחות אישית</h3><span class="tick">✓</span></div><p>להכיר דפוסים, לדייק מטרות ולהתקדם בקצב שמתאים לך.</p></button>
+      <button class="topic" type="button" data-topic="קריירה ועבודה"><div class="topic-top"><span class="emoji">💼</span><h3>קריירה ועבודה</h3><span class="tick">✓</span></div><p>לזהות כיוונים מקצועיים, הזדמנויות וצעדים אפשריים.</p></button>
+      <button class="topic" type="button" data-topic="עסקים והכנסה"><div class="topic-top"><span class="emoji">📈</span><h3>עסקים והכנסה</h3><span class="tick">✓</span></div><p>לחדד הצעה, תמחור, שיווק, לקוחות ומודל הכנסה.</p></button>
+      <button class="topic" type="button" data-topic="יצירתיות ורעיונות"><div class="topic-top"><span class="emoji">💡</span><h3>יצירתיות ורעיונות</h3><span class="tick">✓</span></div><p>לפתח רעיון, לפתור בעיה או להפוך מחשבה למשהו מעשי.</p></button>
+      <button class="topic" type="button" data-topic="קבלת החלטות"><div class="topic-top"><span class="emoji">⚖️</span><h3>קבלת החלטות</h3><span class="tick">✓</span></div><p>למפות אפשרויות, להבין שיקולים ולבחור צעד מתאים.</p></button>
+      <button class="topic" type="button" data-topic="מערכות יחסים ותקשורת"><div class="topic-top"><span class="emoji">🤝</span><h3>מערכות יחסים ותקשורת</h3><span class="tick">✓</span></div><p>לשפר תקשורת, גבולות, שיתופי פעולה והבנה הדדית.</p></button>
+      <button class="topic" type="button" data-topic="למידה ומיומנויות"><div class="topic-top"><span class="emoji">🧠</span><h3>למידה ומיומנויות</h3><span class="tick">✓</span></div><p>ללמוד נושא חדש, לפתח יכולת או ליצור מסלול למידה.</p></button>
+      <button class="topic" type="button" data-topic="איזון ורווחה אישית"><div class="topic-top"><span class="emoji">🌿</span><h3>איזון ורווחה אישית</h3><span class="tick">✓</span></div><p>לחשוב על איזון בין עבודה, זמן, אנרגיה וסדרי עדיפויות.</p></button>
+      <button class="topic" type="button" data-topic="אחר"><div class="topic-top"><span class="emoji">＋</span><h3>יש לי כיוון אחר</h3><span class="tick">✓</span></div><p>נושא אחר, צורך ממוקד או רעיון שעדיין אין לו שם.</p></button>
+    </div>
+  </section>
+
+  <section class="section" id="fit-check">
+    <div class="section-head"><h2>בדיקת התאמה אישית</h2><p>השאלות עוזרות להבין מה אתה מחפש ומה עשוי להתאים. אפשר לסמן כמה תשובות, לדלג על מה שלא רלוונטי ולהוסיף פרטים חופשיים.</p></div>
+    <form class="panel" id="fitForm">
+      <div class="form-grid">
+        <div class="field full"><span class="field-label">1. מה היית רוצה שיקרה בעקבות השימוש באתר או באפליקציה?</span><div class="choices">
+          <label class="choice"><input type="checkbox" name="goal" value="לקבל השראה ובהירות"> לקבל השראה ובהירות</label>
+          <label class="choice"><input type="checkbox" name="goal" value="להתקדם לעבר מטרה"> להתקדם לעבר מטרה</label>
+          <label class="choice"><input type="checkbox" name="goal" value="לפתור בעיה מעשית"> לפתור בעיה מעשית</label>
+          <label class="choice"><input type="checkbox" name="goal" value="לפתח הרגל או יכולת"> לפתח הרגל או יכולת</label>
+          <label class="choice"><input type="checkbox" name="goal" value="לשפר תוצאה מקצועית או כלכלית"> לשפר תוצאה מקצועית או כלכלית</label>
+          <label class="choice"><input type="checkbox" name="goal" value="לארגן מחשבות ולקבל החלטה"> לארגן מחשבות ולקבל החלטה</label>
+        </div></div>
+        <div class="field full"><span class="field-label">2. מה הכי חשוב לך בכלי כזה?</span><div class="choices">
+          <label class="choice"><input type="checkbox" name="priority" value="פשוט וקל לשימוש"> פשוט וקל לשימוש</label>
+          <label class="choice"><input type="checkbox" name="priority" value="הכוונה אישית"> הכוונה אישית</label>
+          <label class="choice"><input type="checkbox" name="priority" value="צעדים ברורים לפעולה"> צעדים ברורים לפעולה</label>
+          <label class="choice"><input type="checkbox" name="priority" value="פרטיות ועבודה עצמאית"> פרטיות ועבודה עצמאית</label>
+          <label class="choice"><input type="checkbox" name="priority" value="תוכן עשיר ומעמיק"> תוכן עשיר ומעמיק</label>
+          <label class="choice"><input type="checkbox" name="priority" value="תוצאה מדידה"> תוצאה מדידה</label>
+        </div></div>
+        <div class="field"><label for="stage">3. איפה אתה נמצא כרגע?</label><select id="stage" name="stage"><option value="">בחירה אופציונלית</option><option>יש לי רעיון, ואני רוצה להתחיל</option><option>כבר התחלתי, ואני מחפש כיוון</option><option>אני מתקדם, אבל נתקע בנקודה מסוימת</option><option>אני רוצה לשפר תוצאה קיימת</option><option>אני רק בודק מה האפשרויות</option></select></div>
+        <div class="field"><label for="format">4. איזה סוג פתרון מעניין אותך?</label><select id="format" name="format"><option value="">לא בטוח עדיין</option><option>אפליקציה לשימוש אישי</option><option>אתר עם תוכן והכוונה</option><option>כלי מעשי או מערכת עבודה</option><option>מסלול שמשלב כמה כלים</option><option>פתוח להצעה שמתאימה לצורך</option></select></div>
+        <div class="field"><label for="budget">5. מה נוח לך מבחינת רכישה חד־פעמית?</label><select id="budget" name="budget"><option value="">אשמח לדבר על זה</option><option>פתרון בסיסי במחיר נגיש</option><option>פתרון ממוקד במחיר בינוני</option><option>פתרון מקיף אם הערך ברור</option><option>קודם רוצה להבין התאמה ותמחור</option></select><span class="hint">המחיר המדויק יימסר לפני רכישה.</span></div>
+        <div class="field"><label for="timing">6. מתי תרצה להתחיל?</label><select id="timing" name="timing"><option value="">לא סגור עדיין</option><option>בהקדם</option><option>בשבועות הקרובים</option><option>אני בודק אפשרויות לעתיד</option></select></div>
+        <div class="field full"><label for="ownTopic">7. נושא נוסף שחשוב לך <span class="hint">(אופציונלי)</span></label><input class="input" id="ownTopic" name="ownTopic" placeholder="למשל: עצמאות כלכלית, זוגיות, שינוי מקצועי, פרויקט מסוים…"></div>
+        <div class="field full"><label for="challenge">8. מה היית רוצה לשנות, לפתור או לקדם? <span class="hint">(במילים שלך)</span></label><textarea id="challenge" name="challenge" placeholder="אין צורך לנסח בצורה מושלמת. תאר בקצרה מה חשוב לך ומה היית רוצה שיקרה."></textarea></div>
+        <div class="field"><label for="name">איך לפנות אליך? <span class="hint">(אופציונלי)</span></label><input class="input" id="name" name="name" autocomplete="name" placeholder="שם פרטי"></div>
+        <div class="field"><label for="contact">מספר טלפון <span class="hint">(אופציונלי)</span></label><input class="input" id="contact" name="contact" type="tel" autocomplete="tel" placeholder="מספר לחזרה אליך"></div>
+      </div>
+      <div class="form-actions"><button class="btn green" type="submit">לסיכום ההתאמה שלי ←</button><span class="fine">אין התחייבות לרכישה. המידע משמש להכנת שיחת ההתאמה.</span></div>
+      <div class="result" id="result" aria-live="polite">
+        <h3>הכיוון שלך — סיכום ראשוני</h3>
+        <p id="resultIntro"></p>
+        <ul id="resultList"></ul>
+        <p id="resultOutro"></p>
+        <button type="button" class="btn green" id="whatsappBtn">להכין הודעת WhatsApp לדוד חזי</button>
+        <button type="button" class="btn light" id="copyBtn">להעתיק את הסיכום</button>
+        <div class="notice">הסיכום אינו אבחון מקצועי או הבטחה לתוצאה. הוא נועד לפתוח שיחה ממוקדת ולעזור לבדוק התאמה.</div>
+        <p class="wa-note" id="waNote"></p>
+      </div>
+    </form>
+  </section>
+
+  <section class="section">
+    <div class="section-head"><h2>מה אפשר למצוא בחנות?</h2><p>דוגמאות לסוגי פתרונות. כאן יוצגו בהמשך המוצרים האמיתיים, עם תיאור, מחיר ותנאי שימוש מדויקים.</p></div>
+    <div class="products">
+      <article class="product"><span class="emoji">🧭</span><span class="tag">בהירות וכיוון</span><h3>כלים לקבלת החלטות</h3><p>אתרים ואפליקציות שמסייעים למפות אפשרויות, לחדד מטרות ולבחור צעד מעשי.</p><small>רכישה חד־פעמית · התאמה לפי הצורך</small><a class="btn light" href="#fit-check" onclick="document.getElementById('fit-check').scrollIntoView({behavior:'smooth'});return false">בדיקת התאמה</a></article>
+      <article class="product"><span class="emoji">🌱</span><span class="tag">צמיחה והרגלים</span><h3>כלים להתפתחות אישית</h3><p>תוכן מובנה, שאלות והכוונה לתמיכה בתהליך אישי או בבניית הרגלים.</p><small>רכישה חד־פעמית · התאמה לפי הצורך</small><a class="btn light" href="#fit-check" onclick="document.getElementById('fit-check').scrollIntoView({behavior:'smooth'});return false">בדיקת התאמה</a></article>
+      <article class="product"><span class="emoji">💡</span><span class="tag">עשייה ותוצאות</span><h3>כלים לעבודה וליזמות</h3><p>פתרונות דיגיטליים שיכולים לסייע בארגון רעיונות, תכנון תהליך ויצירת דרך מעשית קדימה.</p><small>רכישה חד־פעמית · התאמה לפי הצורך</small><a class="btn light" href="#fit-check" onclick="document.getElementById('fit-check').scrollIntoView({behavior:'smooth'});return false">בדיקת התאמה</a></article>
+    </div>
+    <p class="fine" style="margin-top:14px">הכרטיסים כרגע מציגים קטגוריות לדוגמה בלבד; הם אינם מציגים מוצרים שכבר זמינים לרכישה.</p>
+  </section>
+
+  <section class="section">
+    <div class="callout"><div><h2>לא בטוח מה מתאים לך?</h2><p>זה בדיוק המקום להתחיל ממנו. אחרי מילוי השאלון אפשר לתאם שיחת היכרות טלפונית, ובהתאם לצורך גם פגישה פרונטלית ללא עלות ובתיאום מראש. נבדוק יחד איזה פתרון מתאים — ואם אין התאמה, אין חובה לרכוש.</p></div><a class="btn green" href="#fit-check" onclick="document.getElementById('fit-check').scrollIntoView({behavior:'smooth'});return false">מתחילים כאן ←</a></div>
+  </section>
+
+  <section class="section">
+    <div class="section-head"><h2>כמה דברים שחשוב לדעת</h2></div>
+    <div class="faq">
+      <article class="faq-item"><h3>איך מתבצע התשלום?</h3><p>התשלום הוא חד־פעמי, במעמד העברת האפליקציה או האתר ללקוח, לאחר הצגת המחיר ותנאי הרכישה והסכמה עליהם.</p></article>
+      <article class="faq-item"><h3>האם בדיקת ההתאמה עולה כסף?</h3><p>שיחת ההתאמה והפגישה הפרונטלית, אם נדרשת ומתואמת, מוצעות ללא עלות. רכישת האתר או האפליקציה עצמה בתשלום.</p></article>
+      <article class="faq-item"><h3>האם חייבים לקנות אחרי השיחה?</h3><p>לא. המטרה היא להבין את הצורך ולבדוק התאמה. אפשר להחליט שלא להמשיך.</p></article>
+      <article class="faq-item"><h3>האם כל פתרון מתאים לכל אחד?</h3><p>לא בהכרח. ההתאמה תלויה בצורך, בציפיות, בתכונות המוצר ובתנאים שיוצגו לפני הרכישה. אין הבטחה לתוצאה מסוימת.</p></article>
+    </div>
+  </section>
+</main>
+<a class="appointment-star" href="#quick-appointment">✦ לתיאום פגישה</a>
+<div class="mobile-sticky"><a class="btn" href="#fit-check" onclick="document.getElementById('fit-check').scrollIntoView({behavior:'smooth'});return false">בדיקת התאמה אישית ←</a></div>
+
+  <section class="section" id="appointment">
+    <div class="section-head"><h2 data-i18n="appointmentTitle">פנייה מסודרת וקביעת פגישה</h2><p data-i18n="appointmentIntro">אם נפגשנו במקרה ברחוב, אם תרצה להכיר אותי באופן חברי, או אם יש לך נושא מסוים לשיחה — אפשר להשאיר פנייה מסודרת. היא עוזרת לשנינו לדייק את המטרה, להגיע מוכנים ולחסוך זמן.</p></div>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <h3 data-i18n="appointmentFormTitle">מה תרצה לקדם בשיחה?</h3>
+        <p data-i18n="appointmentFormIntro">בחר את סוג הפנייה ואת מידת הדחיפות. אפשר לסמן כמה נושאים ולהוסיף הסבר חופשי.</p>
+        <form id="meetingForm">
+          <div class="field">
+            <label data-i18n="meetingTypeLabel">סוג הפנייה</label>
+            <div class="schedule-list">
+              <label class="choice"><input type="checkbox" name="meetingType" value="בדיקת התאמה לאתר או לאפליקציה"> <span data-i18n="meetingProduct">בדיקת התאמה לאתר או לאפליקציה</span></label>
+              <label class="choice"><input type="checkbox" name="meetingType" value="שיחה מקצועית או עסקית"> <span data-i18n="meetingBusiness">שיחה מקצועית או עסקית</span></label>
+              <label class="choice"><input type="checkbox" name="meetingType" value="היכרות ספונטנית או חברית"> <span data-i18n="meetingFriendly">היכרות ספונטנית או חברית</span></label>
+              <label class="choice"><input type="checkbox" name="meetingType" value="רעיון לשיתוף פעולה"> <span data-i18n="meetingCollab">רעיון לשיתוף פעולה</span></label>
+              <label class="choice"><input type="checkbox" name="meetingType" value="תרומה או תמיכה בפרויקטים"> <span data-i18n="meetingSupport">תרומה או תמיכה בפרויקטים</span></label>
+              <label class="choice"><input type="checkbox" name="meetingType" value="עניין אחר"> <span data-i18n="meetingOther">עניין אחר</span></label>
+            </div>
+          </div>
+          <div class="field" style="margin-top:16px">
+            <label for="meetingGoal" data-i18n="meetingGoalLabel">מה מטרת הפנייה ומה חשוב שאדע?</label>
+            <textarea id="meetingGoal" placeholder="כתוב בכמה משפטים מה הנושא, מה תרצה לקבל מהשיחה, ומה כבר ניסית." data-i18n-placeholder="meetingGoalPlaceholder"></textarea>
+          </div>
+          <div class="form-grid" style="margin-top:15px">
+            <div class="field"><label for="meetingName" data-i18n="yourName">שם</label><input id="meetingName" class="input" placeholder="שם פרטי" data-i18n-placeholder="namePlaceholder"></div>
+            <div class="field"><label for="meetingContact" data-i18n="yourContact">מספר טלפון או דרך חזרה</label><input id="meetingContact" class="input" placeholder="מספר טלפון (אופציונלי)" data-i18n-placeholder="contactPlaceholder"></div>
+          </div>
+          <div class="field" style="margin-top:15px">
+            <label for="meetingWait" data-i18n="waitLabel">מה מידת הגמישות שלך מבחינת זמן ההמתנה?</label>
+            <select id="meetingWait">
+              <option value="גמיש/ה; אפשר לחזור אליי כשיתאפשר" data-i18n="waitFlexible">אני גמיש/ה; אפשר לחזור אליי כשיתאפשר</option>
+              <option value="אשמח למענה בשבועות הקרובים" data-i18n="waitWeeks">אשמח למענה בשבועות הקרובים</option>
+              <option value="יש לי חלון זמן מוגדר" data-i18n="waitWindow">יש לי חלון זמן מוגדר ואציין אותו בהודעה</option>
+            </select>
+          </div>
+          <div class="field" style="margin-top:15px">
+            <label for="meetingContribution" data-i18n="contributionLabel">האם תרצה להציע תמיכה או תגמול עבור זמן ייעודי? <span class="hint">(לא חובה)</span></label>
+            <select id="meetingContribution">
+              <option value="לא כרגע" data-i18n="contributionNo">לא כרגע</option>
+              <option value="אשמח לתרום לפרויקטים" data-i18n="contributionDonate">אשמח לתרום לפרויקטים</option>
+              <option value="אשמח לדון בתגמול עבור פגישה ייעודית" data-i18n="contributionPaid">אשמח לדון בתגמול עבור פגישה ייעודית</option>
+              <option value="אשמח להציע תמיכה אחרת" data-i18n="contributionOther">אשמח להציע תמיכה אחרת</option>
+            </select>
+          </div>
+          <div class="important" style="margin-top:18px" data-i18n="availabilityNotice">חשוב: אין מענה בסופי שבוע, בשבתות, בחגים ובמועדי ישראל. ייתכן שלא אוכל להשיב במהירות או לקבוע פגישה מיידית. תודה על הסבלנות והדיוק.</div>
+          <p class="microcopy" data-i18n="meetingEthics">פנייה מסודרת היא כלי סינון ותיאום ציפיות, לא הבטחה לפגישה. תמיכה כספית מתקבלת בברכה אך אינה מבטיחה מענה, קדימות או פגישה. הצעה לתגמול עבור זמן ייעודי עשויה להילקח בחשבון, בהתאם לזמינות ולנסיבות.</p>
+          <div class="form-actions"><button class="btn green" type="submit" data-i18n="prepareWhatsapp">הכנת פנייה ל־WhatsApp ←</button><span class="fine" data-i18n="noObligation">אין התחייבות לתשלום או לפגישה.</span></div>
+        </form>
+      </div>
+      <aside class="contact-card">
+        <h3 data-i18n="waitlistTitle">רשימת המתנה ב־WhatsApp</h3>
+        <p data-i18n="waitlistText">רוצה להישאר בתור לפנייה או לעדכון? אפשר לשלוח הודעה קצרה ולציין את הנושא. הפנייה תעזור לי להבין במה מדובר ולחזור כשיתאפשר.</p>
+        <a class="btn green" href="https://wa.me/972587887515?text=%D7%A9%D7%9C%D7%95%D7%9D%20%D7%93%D7%95%D7%93%20%D7%97%D7%96%D7%99%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%94%D7%A6%D7%98%D7%A8%D7%A3%20%D7%9C%D7%A8%D7%A9%D7%99%D7%9E%D7%AA%20%D7%94%D7%94%D7%9E%D7%AA%D7%A0%D7%94." target="_blank" rel="noopener" data-i18n="joinWaitlist">הצטרפות לרשימת ההמתנה ←</a>
+        <p><strong>WhatsApp: 058-788-7515</strong></p>
+        <div class="notice" data-i18n="waitlistNotice">הצטרפות לרשימה אינה מבטיחה מועד או מענה מיידי. נא להימנע משליחת מידע אישי רגיש.</div>
+        <hr style="border:0;border-top:1px solid var(--line);margin:24px 0">
+        <h3 data-i18n="meetingWhyTitle">למה פנייה מסודרת?</h3>
+        <p data-i18n="meetingWhyText">כדי שנוכל להבין מראש מה מטרת השיחה, האם יש התאמה, ומה הדרך הנכונה להתקדם. זה מועיל לשני הצדדים — בין אם מדובר ברעיון עסקי, בכלי דיגיטלי, בהיכרות או בנושא אחר.</p>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section" id="support">
+    <div class="section-head"><h2 data-i18n="supportTitle">תמיכה בפרויקטים וביוזמות נוספות</h2><p data-i18n="supportIntro">אם הכלים והתהליכים האלה מדברים אליך, אפשר לתמוך בפיתוח של רעיונות נוספים שמטרתם להנגיש ידע, כלים ופתרונות לאנשים. התמיכה היא רשות, וכל תרומה תתקבל בהערכה.</p></div>
+    <div class="support-box">
+      <h3 data-i18n="supportWaysTitle">אפשרויות לתמיכה</h3>
+      <p data-i18n="supportWaysText">אפשר לבחור את הדרך הנוחה לך. לפני העברה, מומלץ לוודא שהפרטים הוזנו נכון. תמיכה אינה מקנה זכות אוטומטית לפגישה או לשירות אישי.</p>
+      <div class="bank-details">
+        <div class="bank-row"><span><strong>Bit / PayBox</strong><br>058-788-7515</span><button class="copy-mini" type="button" data-copy="0587887515" data-i18n="copy">העתקה</button></div>
+        <div class="bank-row"><span><strong data-i18n="bankTransfer">העברה בנקאית · דיסקונט</strong><br><span data-i18n="accountLabel">חשבון</span>: 150160609 · <span data-i18n="branchLabel">סניף</span>: 139</span><button class="copy-mini" type="button" data-copy="150160609" data-i18n="copy">העתקת חשבון</button></div>
+        <div class="bank-row"><span><strong data-i18n="goldTransfer">העברת זה״ב (IBAN)</strong><br>IL56 0111 3900 0015 0160 609</span><button class="copy-mini" type="button" data-copy="IL560111390000150160609" data-i18n="copy">העתקה</button></div>
+      </div>
+      <p class="microcopy" style="color:#d5e0da;margin-top:16px" data-i18n="supportCaution">העברה היא בחירה אישית. אין צורך לתרום כדי לשלוח פנייה. יש לבדוק את פרטי המקבל מולו לפני העברה כספית.</p>
+    </div>
+  </section>
+
+
+<section class="section" id="quick-appointment">
+  <div class="section-head">
+    <h2>תיאום פגישה עם דוד חזי</h2>
+    <p>פנייה קצרה ומדויקת עוזרת להבין על מה תרצו לדבר ולהגיע מוכנים.</p>
+  </div>
+  <div class="contact-card">
+    <h3>מתחילים בהודעה קצרה</h3>
+    <p>אפשר לציין את מטרת הפנייה ואת הדרך שבה נוח לחזור אליכם. אין צורך למלא שאלון ארוך כדי להשאיר פנייה ראשונית.</p>
+    <form id="quickAppointmentForm">
+      <div class="form-grid">
+        <div class="field"><label for="quickName">שם (לא חובה)</label><input class="input" id="quickName" placeholder="השם שלך"></div>
+        <div class="field"><label for="quickContact">מספר טלפון (לא חובה)</label><input class="input" id="quickContact" type="tel" placeholder="מספר לחזרה"></div>
+        <div class="field full"><label for="quickReason">מה מטרת הפגישה?</label><textarea id="quickReason" placeholder="כמה מילים על הנושא ומה תרצו לברר"></textarea></div>
+      </div>
+      <div class="important" style="margin-top:16px">חשוב לדעת: דוד חזי הוא אדם אחד, ולכן לא תמיד מתאפשר להשיב בתוך דקות. אם לא התקבלה תשובה מיד, אין פירוש הדבר שהפנייה אינה רצויה. ייתכן שהוא עסוק או אינו זמין באותו זמן. תודה על הסבלנות — הפנייה תיבחן כשיתאפשר.</div>
+      <p class="microcopy">אין מענה בסופי שבוע, בשבתות, בחגים ובמועדי ישראל. שליחת פנייה אינה מבטיחה פגישה או מענה מיידי.</p>
+      <div class="form-actions"><button class="btn green" type="submit">המשך ל־WhatsApp ←</button></div>
+    </form>
+  </div>
+  <div class="qr-card" id="shareQr">
+    <div class="qr-copy">
+      <h3>לשתף את הפלטפורמה בסריקת QR</h3>
+      <p>אפשר להציג את הקוד במסך כדי שאדם אחר יסרוק אותו. כדי שהקוד יפתח את האתר אצל אחרים, יש לפרסם את האתר בכתובת אינטרנט קבועה ולהכניס אותה כאן.</p>
+      <div class="field" style="margin-bottom:12px">
+        <label for="publicUrl">כתובת האתר לשיתוף</label>
+        <input class="input" id="publicUrl" type="url" placeholder="https://example.com" value="">
+        <span class="hint">קובץ מקומי אינו נגיש לאחרים דרך QR. נדרשת כתובת אתר ציבורית.</span>
+      </div>
+      <div class="qr-actions">
+        <button class="btn green" type="button" id="makeQr">יצירת QR</button>
+        <button class="btn light" type="button" id="downloadQr">שמירת QR כתמונה</button>
+      </div>
+      <p class="microcopy" id="qrStatus" aria-live="polite">הזן כתובת ציבורית ולחץ על ״יצירת QR״. יצירת הקוד משתמשת בשירות QR מקוון ולכן דורשת חיבור לאינטרנט.</p>
+    </div>
+    <div id="qrOutput" aria-label="QR code output"><div style="width:176px;height:176px;border:1px dashed #b8c7bd;border-radius:10px;display:grid;place-items:center;text-align:center;padding:14px;color:#66736e;font-size:.9rem">קוד QR יוצג כאן</div></div>
+  </div>
+</section>
+
+<footer><div class="wrap footer-inner"><div><strong>החנות של דוד חזי</strong><div class="footer-signature">David Hazi</div><p>כלים דיגיטליים שנבחרים לפי האדם, המטרה והצורך.</p></div><div><p>רכישה חד־פעמית · התאמה אישית · ללא התחייבות בשיחת הבדיקה</p><p>© <span id="year"></span> דוד חזי</p></div></div></footer>
+<script>
+/* לפני פרסום: החלף את המספר בפורמט בינלאומי ללא +, רווחים או מקפים. לדוגמה ישראל: 9725XXXXXXXX */
+const WHATSAPP_NUMBER = "972XXXXXXXXX";
+const selectedTopics = new Set();
+document.querySelectorAll(".topic").forEach(button=>{
+  button.addEventListener("click",()=>{
+    const topic=button.dataset.topic;
+    if(selectedTopics.has(topic)){selectedTopics.delete(topic);button.classList.remove("selected");button.setAttribute("aria-pressed","false");button.querySelector(".tick").textContent="✓";}
+    else{selectedTopics.add(topic);button.classList.add("selected");button.setAttribute("aria-pressed","true");button.querySelector(".tick").textContent="✓";}
+  });
+});
+const checked = name => [...document.querySelectorAll(`input[name="${name}"]:checked`)].map(x=>x.value);
+function collect(){
+ const f=document.getElementById("fitForm");
+ const data=new FormData(f);
+ return {
+  topics:[...selectedTopics],
+  goals:checked("goal"),priorities:checked("priority"),
+  stage:data.get("stage")||"לא צוין",format:data.get("format")||"לא צוין",
+  budget:data.get("budget")||"לא צוין",timing:data.get("timing")||"לא צוין",
+  ownTopic:(data.get("ownTopic")||"").trim(),challenge:(data.get("challenge")||"").trim(),
+  name:(data.get("name")||"").trim(),contact:(data.get("contact")||"").trim()
+ };
+}
+function buildMessage(d){
+ return `שלום דוד חזי, מילאתי את בדיקת ההתאמה באתר שלך ואשמח לשיחת היכרות.\n\nהנושאים שמעניינים אותי: ${d.topics.join(", ")||"טרם בחרתי"}\nהמטרות שלי: ${d.goals.join(", ")||"לא צוין"}\nמה חשוב לי: ${d.priorities.join(", ")||"לא צוין"}\nהשלב שבו אני נמצא: ${d.stage}\nסוג פתרון מועדף: ${d.format}\nהעדפת רכישה/תמחור: ${d.budget}\nמתי ארצה להתחיל: ${d.timing}\nנושא נוסף: ${d.ownTopic||"לא צוין"}\nמה ארצה לקדם: ${d.challenge||"אשמח להסביר בשיחה"}\nשם: ${d.name||"לא צוין"}\nטלפון לחזרה: ${d.contact||"לא צוין"}\n\nאשמח לבדוק יחד איזה אתר או אפליקציה עשויים להתאים לי.`;
+}
+let latestMessage="";
+document.getElementById("fitForm").addEventListener("submit",e=>{
+ e.preventDefault();
+ const d=collect(), result=document.getElementById("result"), list=document.getElementById("resultList");
+ latestMessage=buildMessage(d);
+ document.getElementById("resultIntro").textContent=d.name?`${d.name}, הנה סיכום ראשוני של הכיוון שבחרת:`:"הנה סיכום ראשוני של הכיוון שבחרת:";
+ list.innerHTML="";
+ const items=[
+  ["תחומים",d.topics.join(", ")||"עוד לא נבחרו תחומים"],
+  ["מטרות",d.goals.join(", ")||"המטרות עדיין פתוחות"],
+  ["מה חשוב לך",d.priorities.join(", ")||"נברר בשיחה"],
+  ["שלב נוכחי",d.stage],["סוג פתרון",d.format],["תמחור",d.budget],["מועד התחלה",d.timing]
+ ];
+ if(d.ownTopic)items.push(["נושא נוסף",d.ownTopic]);
+ if(d.challenge)items.push(["במילים שלך",d.challenge]);
+ items.forEach(([k,v])=>{const li=document.createElement("li");li.textContent=`${k}: ${v}`;list.appendChild(li)});
+ document.getElementById("resultOutro").textContent="הצעד הבא האפשרי הוא שיחה קצרה כדי לברר את הצורך, להציג פתרונות רלוונטיים ולבדוק התאמה — בלי התחייבות לרכישה.";
+ document.getElementById("waNote").textContent=WHATSAPP_NUMBER.includes("X")?"כדי שהכפתור יפתח את WhatsApp יש להוסיף את מספר העסק בקוד האתר לפני הפרסום. בינתיים אפשר להעתיק את הסיכום.":"";
+ result.classList.add("show");result.scrollIntoView({behavior:"smooth",block:"start"});
+});
+document.getElementById("whatsappBtn").addEventListener("click",()=>{
+ if(WHATSAPP_NUMBER.includes("X")){alert("מספר ה-WhatsApp של דוד חזי עדיין לא הוגדר. אפשר להעתיק את הסיכום ולהדביק אותו בהודעה.");return;}
+ window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(latestMessage)}`,"_blank","noopener");
+});
+document.getElementById("copyBtn").addEventListener("click",async()=>{
+ try{await navigator.clipboard.writeText(latestMessage);document.getElementById("copyBtn").textContent="הסיכום הועתק ✓";}
+ catch(e){const ta=document.createElement("textarea");ta.value=latestMessage;document.body.appendChild(ta);ta.select();document.execCommand("copy");ta.remove();document.getElementById("copyBtn").textContent="הסיכום הועתק ✓";}
+});
+document.getElementById("year").textContent=new Date().getFullYear();
+</script>
+
+<script>
+const UI_TRANSLATIONS = {
+he:{languageLabel:"שפה / Language",navAppointment:"בדיקת התאמה ←",appointmentTitle:"פנייה מסודרת וקביעת פגישה",appointmentIntro:"אם נפגשנו במקרה ברחוב, אם תרצה להכיר אותי באופן חברי, או אם יש לך נושא מסוים לשיחה — אפשר להשאיר פנייה מסודרת. היא עוזרת לשנינו לדייק את המטרה, להגיע מוכנים ולחסוך זמן.",appointmentFormTitle:"מה תרצה לקדם בשיחה?",appointmentFormIntro:"בחר את סוג הפנייה ואת מידת הדחיפות. אפשר לסמן כמה נושאים ולהוסיף הסבר חופשי.",meetingTypeLabel:"סוג הפנייה",meetingProduct:"בדיקת התאמה לאתר או לאפליקציה",meetingBusiness:"שיחה מקצועית או עסקית",meetingFriendly:"היכרות ספונטנית או חברית",meetingCollab:"רעיון לשיתוף פעולה",meetingSupport:"תרומה או תמיכה בפרויקטים",meetingOther:"עניין אחר",meetingGoalLabel:"מה מטרת הפנייה ומה חשוב שאדע?",meetingGoalPlaceholder:"כתוב בכמה משפטים מה הנושא, מה תרצה לקבל מהשיחה, ומה כבר ניסית.",yourName:"שם",yourContact:"מספר טלפון או דרך חזרה",namePlaceholder:"שם פרטי",contactPlaceholder:"מספר טלפון (אופציונלי)",waitLabel:"מה מידת הגמישות שלך מבחינת זמן ההמתנה?",waitFlexible:"אני גמיש/ה; אפשר לחזור אליי כשיתאפשר",waitWeeks:"אשמח למענה בשבועות הקרובים",waitWindow:"יש לי חלון זמן מוגדר ואציין אותו בהודעה",contributionLabel:"האם תרצה להציע תמיכה או תגמול עבור זמן ייעודי? (לא חובה)",contributionNo:"לא כרגע",contributionDonate:"אשמח לתרום לפרויקטים",contributionPaid:"אשמח לדון בתגמול עבור פגישה ייעודית",contributionOther:"אשמח להציע תמיכה אחרת",availabilityNotice:"חשוב: אין מענה בסופי שבוע, בשבתות, בחגים ובמועדי ישראל. ייתכן שלא אוכל להשיב במהירות או לקבוע פגישה מיידית. תודה על הסבלנות והדיוק.",meetingEthics:"פנייה מסודרת היא כלי סינון ותיאום ציפיות, לא הבטחה לפגישה. תמיכה כספית מתקבלת בברכה אך אינה מבטיחה מענה, קדימות או פגישה. הצעה לתגמול עבור זמן ייעודי עשויה להילקח בחשבון, בהתאם לזמינות ולנסיבות.",prepareWhatsapp:"הכנת פנייה ל־WhatsApp ←",noObligation:"אין התחייבות לתשלום או לפגישה.",waitlistTitle:"רשימת המתנה ב־WhatsApp",waitlistText:"רוצה להישאר בתור לפנייה או לעדכון? אפשר לשלוח הודעה קצרה ולציין את הנושא. הפנייה תעזור לי להבין במה מדובר ולחזור כשיתאפשר.",joinWaitlist:"הצטרפות לרשימת ההמתנה ←",waitlistNotice:"הצטרפות לרשימה אינה מבטיחה מועד או מענה מיידי. נא להימנע משליחת מידע אישי רגיש.",meetingWhyTitle:"למה פנייה מסודרת?",meetingWhyText:"כדי שנוכל להבין מראש מה מטרת השיחה, האם יש התאמה, ומה הדרך הנכונה להתקדם. זה מועיל לשני הצדדים — בין אם מדובר ברעיון עסקי, בכלי דיגיטלי, בהיכרות או בנושא אחר.",supportTitle:"תמיכה בפרויקטים וביוזמות נוספות",supportIntro:"אם הכלים והתהליכים האלה מדברים אליך, אפשר לתמוך בפיתוח של רעיונות נוספים שמטרתם להנגיש ידע, כלים ופתרונות לאנשים. התמיכה היא רשות, וכל תרומה תתקבל בהערכה.",supportWaysTitle:"אפשרויות לתמיכה",supportWaysText:"אפשר לבחור את הדרך הנוחה לך. לפני העברה, מומלץ לוודא שהפרטים הוזנו נכון. תמיכה אינה מקנה זכות אוטומטית לפגישה או לשירות אישי.",copy:"העתקה",bankTransfer:"העברה בנקאית · דיסקונט",accountLabel:"חשבון",branchLabel:"סניף",goldTransfer:"העברת זה״ב (IBAN)",supportCaution:"העברה היא בחירה אישית. אין צורך לתרום כדי לשלוח פנייה. יש לבדוק את פרטי המקבל מולו לפני העברה כספית."},
+en:{languageLabel:"Language",navAppointment:"Fit check ←",appointmentTitle:"Structured inquiry & meeting request",appointmentIntro:"Whether we met by chance, you would like a friendly introduction, or you have a specific topic in mind, leave a structured inquiry. It helps both sides clarify the goal, prepare, and save time.",appointmentFormTitle:"What would you like to discuss?",appointmentFormIntro:"Choose the type of inquiry and your timing. Select multiple topics and add your own explanation.",meetingTypeLabel:"Type of inquiry",meetingProduct:"Website or app fit check",meetingBusiness:"Professional or business conversation",meetingFriendly:"Spontaneous or friendly introduction",meetingCollab:"Collaboration idea",meetingSupport:"Support for projects",meetingOther:"Other",meetingGoalLabel:"What is the purpose of your inquiry?",meetingGoalPlaceholder:"Briefly describe the topic, what you hope to get from the conversation, and what you have already tried.",yourName:"Name",yourContact:"Phone or preferred contact",namePlaceholder:"First name",contactPlaceholder:"Phone number (optional)",waitLabel:"How flexible are you about waiting?",waitFlexible:"I am flexible; please reply when possible",waitWeeks:"I hope to hear back in the coming weeks",waitWindow:"I have a specific time window and will explain in my message",contributionLabel:"Would you like to offer support or compensation for dedicated time? (optional)",contributionNo:"Not at this time",contributionDonate:"I would like to support projects",contributionPaid:"I would like to discuss compensation for a dedicated meeting",contributionOther:"I would like to offer other support",availabilityNotice:"Please note: no replies on weekends, Shabbat, holidays, or Israeli public/religious holidays. A quick reply or immediate meeting may not be possible. Thank you for your patience and clarity.",meetingEthics:"A structured inquiry helps screen and align expectations; it does not guarantee a meeting. Contributions are welcome but do not guarantee a reply, priority, or meeting. An offer to compensate dedicated time may be considered depending on availability and circumstances.",prepareWhatsapp:"Prepare WhatsApp inquiry ←",noObligation:"No payment or meeting commitment.",waitlistTitle:"WhatsApp waiting list",waitlistText:"Would you like to join the queue for a reply or update? Send a short message with the topic so I can understand your request and respond when possible.",joinWaitlist:"Join the waiting list ←",waitlistNotice:"Joining does not guarantee a date or immediate reply. Please do not send sensitive personal information.",meetingWhyTitle:"Why submit a structured inquiry?",meetingWhyText:"It helps clarify the purpose, whether there is a fit, and the best next step. This is useful for both sides, whether the topic is business, a digital tool, an introduction, or something else.",supportTitle:"Support further projects and initiatives",supportIntro:"If these tools and processes are meaningful to you, you can support the development of further ideas that make knowledge, tools, and solutions more accessible. Support is optional and appreciated.",supportWaysTitle:"Ways to support",supportWaysText:"Choose the method that works for you. Please verify the details before transferring. Support does not automatically entitle anyone to a meeting or personal service.",copy:"Copy",bankTransfer:"Bank transfer · Discount Bank",accountLabel:"Account",branchLabel:"Branch",goldTransfer:"Zahav transfer (IBAN)",supportCaution:"A transfer is entirely optional. You do not need to donate to send an inquiry. Verify recipient details before transferring money."},
+ar:{languageLabel:"اللغة",navAppointment:"تحديد الملاءمة ←",appointmentTitle:"طلب منظّم للتواصل أو اللقاء",appointmentIntro:"سواء التقينا صدفة أو رغبت في تعارف ودي أو لديك موضوع محدد، يمكنك إرسال طلب منظّم. يساعد ذلك الطرفين على توضيح الهدف والاستعداد وتوفير الوقت.",appointmentFormTitle:"ما الذي ترغب في مناقشته؟",appointmentFormIntro:"اختر نوع الطلب ومدى الاستعجال. يمكنك اختيار عدة مواضيع وإضافة شرحك.",meetingTypeLabel:"نوع الطلب",meetingProduct:"تحديد ملاءمة موقع أو تطبيق",meetingBusiness:"حديث مهني أو تجاري",meetingFriendly:"تعارف عفوي أو ودي",meetingCollab:"فكرة تعاون",meetingSupport:"دعم المشاريع",meetingOther:"موضوع آخر",meetingGoalLabel:"ما هدف الطلب وما الذي ينبغي أن أعرفه؟",meetingGoalPlaceholder:"اشرح باختصار الموضوع وما الذي تأمل الحصول عليه من الحديث وما الذي جربته بالفعل.",yourName:"الاسم",yourContact:"الهاتف أو وسيلة التواصل",namePlaceholder:"الاسم الأول",contactPlaceholder:"رقم الهاتف (اختياري)",waitLabel:"ما مدى مرونتك بشأن وقت الانتظار؟",waitFlexible:"أنا مرن/ة؛ يمكن الرد عندما يتاح ذلك",waitWeeks:"آمل الرد خلال الأسابيع القادمة",waitWindow:"لدي وقت محدد وسأوضحه في الرسالة",contributionLabel:"هل ترغب في تقديم دعم أو مقابل لوقت مخصص؟ (اختياري)",contributionNo:"ليس الآن",contributionDonate:"أرغب في دعم المشاريع",contributionPaid:"أرغب في مناقشة مقابل لقاء مخصص",contributionOther:"أرغب في تقديم دعم آخر",availabilityNotice:"مهم: لا توجد ردود في عطلات نهاية الأسبوع أو السبت أو الأعياد والمناسبات الإسرائيلية. قد لا يكون الرد السريع أو اللقاء الفوري ممكنًا. شكرًا لصبرك ووضوحك.",meetingEthics:"الطلب المنظم يساعد على تحديد الملاءمة والتوقعات لكنه لا يضمن اللقاء. الدعم مرحب به لكنه لا يضمن الرد أو الأولوية أو اللقاء. قد يؤخذ عرض مقابل وقت مخصص في الاعتبار حسب التوفر والظروف.",prepareWhatsapp:"إعداد رسالة WhatsApp ←",noObligation:"لا التزام بالدفع أو اللقاء.",waitlistTitle:"قائمة انتظار WhatsApp",waitlistText:"هل ترغب في الانضمام إلى قائمة الانتظار للرد أو التحديث؟ أرسل رسالة قصيرة توضح الموضوع.",joinWaitlist:"الانضمام إلى قائمة الانتظار ←",waitlistNotice:"الانضمام لا يضمن موعدًا أو ردًا فوريًا. يرجى عدم إرسال معلومات شخصية حساسة.",meetingWhyTitle:"لماذا إرسال طلب منظّم؟",meetingWhyText:"لتوضيح هدف الحديث ومدى الملاءمة والخطوة التالية المناسبة للطرفين.",supportTitle:"دعم مشاريع ومبادرات إضافية",supportIntro:"يمكنك دعم تطوير أفكار وأدوات تجعل المعرفة والحلول أكثر إتاحة. الدعم اختياري ومقدّر.",supportWaysTitle:"طرق الدعم",supportWaysText:"اختر الطريقة المناسبة وتحقق من التفاصيل قبل التحويل. الدعم لا يمنح تلقائيًا حق اللقاء أو الخدمة الشخصية.",copy:"نسخ",bankTransfer:"تحويل بنكي · بنك Discount",accountLabel:"الحساب",branchLabel:"الفرع",goldTransfer:"تحويل Zahav (IBAN)",supportCaution:"التحويل اختياري. لا تحتاج إلى التبرع لإرسال طلب. تحقق من بيانات المستلم قبل التحويل."},
+hi:{languageLabel:"भाषा",navAppointment:"उपयुक्तता जाँच ←",appointmentTitle:"संपर्क और मुलाक़ात का अनुरोध",appointmentIntro:"चाहे हमारी मुलाक़ात संयोग से हुई हो, आप मित्रवत परिचय चाहते हों या किसी खास विषय पर बात करना चाहते हों—एक व्यवस्थित अनुरोध भेजें। इससे दोनों पक्ष उद्देश्य स्पष्ट कर सकते हैं और समय बचा सकते हैं।",appointmentFormTitle:"आप किस बारे में बात करना चाहते हैं?",appointmentFormIntro:"अनुरोध का प्रकार चुनें। कई विषय चुन सकते हैं और अपना विवरण जोड़ सकते हैं।",meetingTypeLabel:"अनुरोध का प्रकार",meetingProduct:"वेबसाइट या ऐप की उपयुक्तता",meetingBusiness:"पेशेवर या व्यावसायिक बातचीत",meetingFriendly:"अनौपचारिक या मित्रवत परिचय",meetingCollab:"सहयोग का विचार",meetingSupport:"परियोजनाओं को समर्थन",meetingOther:"अन्य",meetingGoalLabel:"आपके अनुरोध का उद्देश्य क्या है?",meetingGoalPlaceholder:"विषय, बातचीत से आपकी अपेक्षा और अब तक किए गए प्रयास संक्षेप में लिखें।",yourName:"नाम",yourContact:"फ़ोन या संपर्क का तरीका",namePlaceholder:"पहला नाम",contactPlaceholder:"फ़ोन नंबर (वैकल्पिक)",waitLabel:"प्रतीक्षा समय को लेकर आप कितने लचीले हैं?",waitFlexible:"मैं लचीला हूँ; समय मिलने पर जवाब दें",waitWeeks:"आने वाले हफ्तों में जवाब की आशा है",waitWindow:"मेरे पास एक निश्चित समय है, जिसे संदेश में बताऊँगा",contributionLabel:"क्या आप निर्धारित समय के लिए सहयोग या भुगतान देना चाहेंगे? (वैकल्पिक)",contributionNo:"अभी नहीं",contributionDonate:"परियोजनाओं का समर्थन करना चाहूँगा",contributionPaid:"विशेष मुलाक़ात के भुगतान पर चर्चा करना चाहूँगा",contributionOther:"अन्य सहयोग देना चाहूँगा",availabilityNotice:"ध्यान दें: सप्ताहांत, शब्बत, छुट्टियों और इज़राइल के त्योहारों पर जवाब नहीं दिया जाता। तुरंत जवाब या मुलाक़ात संभव नहीं हो सकती। धैर्य और स्पष्टता के लिए धन्यवाद।",meetingEthics:"व्यवस्थित अनुरोध अपेक्षाएँ स्पष्ट करता है, लेकिन मुलाक़ात की गारंटी नहीं देता। सहयोग का स्वागत है, पर इससे जवाब, प्राथमिकता या मुलाक़ात की गारंटी नहीं मिलती।",prepareWhatsapp:"WhatsApp संदेश तैयार करें ←",noObligation:"भुगतान या मुलाक़ात की कोई बाध्यता नहीं।",waitlistTitle:"WhatsApp प्रतीक्षा सूची",waitlistText:"जवाब या अपडेट के लिए सूची में शामिल होना चाहते हैं? विषय बताकर छोटा संदेश भेजें।",joinWaitlist:"प्रतीक्षा सूची में शामिल हों ←",waitlistNotice:"सूची में शामिल होने से तारीख या तुरंत जवाब की गारंटी नहीं है। संवेदनशील निजी जानकारी न भेजें।",meetingWhyTitle:"व्यवस्थित अनुरोध क्यों?",meetingWhyText:"इससे बातचीत का उद्देश्य, उपयुक्तता और अगला कदम स्पष्ट होता है।",supportTitle:"अन्य परियोजनाओं और पहलों को समर्थन",supportIntro:"ज्ञान और उपयोगी समाधान अधिक लोगों तक पहुँचाने वाले नए विचारों के विकास में स्वैच्छिक सहयोग दे सकते हैं।",supportWaysTitle:"सहयोग के तरीके",supportWaysText:"अपनी सुविधानुसार तरीका चुनें और पैसे भेजने से पहले विवरण जाँचें। सहयोग से मुलाक़ात या व्यक्तिगत सेवा का स्वतः अधिकार नहीं मिलता।",copy:"कॉपी करें",bankTransfer:"बैंक ट्रांसफ़र · डिस्काउंट बैंक",accountLabel:"खाता",branchLabel:"शाखा",goldTransfer:"ज़हाव ट्रांसफ़र (IBAN)",supportCaution:"पैसे भेजना वैकल्पिक है। अनुरोध भेजने के लिए दान आवश्यक नहीं। पैसे भेजने से पहले प्राप्तकर्ता का विवरण जाँचें।"},
+uk:{languageLabel:"Мова",navAppointment:"Перевірити відповідність ←",appointmentTitle:"Запит на зв’язок або зустріч",appointmentIntro:"Якщо ми зустрілися випадково, ви хочете познайомитися або маєте конкретну тему для розмови — надішліть структурований запит. Це допоможе обом сторонам уточнити мету й заощадити час.",appointmentFormTitle:"Що ви хотіли б обговорити?",appointmentFormIntro:"Оберіть тип запиту; можна позначити кілька тем і додати пояснення.",meetingTypeLabel:"Тип запиту",meetingProduct:"Підбір сайту або застосунку",meetingBusiness:"Професійна або ділова розмова",meetingFriendly:"Неформальне знайомство",meetingCollab:"Ідея співпраці",meetingSupport:"Підтримка проєктів",meetingOther:"Інше",meetingGoalLabel:"Яка мета звернення?",meetingGoalPlaceholder:"Коротко опишіть тему, очікування від розмови та що вже пробували.",yourName:"Ім’я",yourContact:"Телефон або спосіб зв’язку",namePlaceholder:"Ім’я",contactPlaceholder:"Телефон (необов’язково)",waitLabel:"Наскільки ви гнучкі щодо часу очікування?",waitFlexible:"Я можу зачекати; відповідайте, коли буде можливість",waitWeeks:"Сподіваюся на відповідь протягом найближчих тижнів",waitWindow:"Маю конкретний часовий проміжок і вкажу його в повідомленні",contributionLabel:"Чи бажаєте запропонувати підтримку або оплату за окремо виділений час? (необов’язково)",contributionNo:"Поки ні",contributionDonate:"Хочу підтримати проєкти",contributionPaid:"Хочу обговорити оплату окремої зустрічі",contributionOther:"Хочу запропонувати іншу підтримку",availabilityNotice:"Зверніть увагу: відповіді не надаються у вихідні, шабат, свята та ізраїльські святкові дні. Швидка відповідь або негайна зустріч можуть бути неможливими. Дякую за терпіння та чіткість.",meetingEthics:"Структурований запит допомагає узгодити очікування, але не гарантує зустрічі. Підтримка вітається, але не гарантує відповіді, пріоритету чи зустрічі.",prepareWhatsapp:"Підготувати повідомлення WhatsApp ←",noObligation:"Жодних зобов’язань щодо оплати чи зустрічі.",waitlistTitle:"Список очікування WhatsApp",waitlistText:"Хочете потрапити до списку очікування? Надішліть коротке повідомлення з темою звернення.",joinWaitlist:"Приєднатися до списку ←",waitlistNotice:"Участь у списку не гарантує дату або негайну відповідь. Не надсилайте чутливі персональні дані.",meetingWhyTitle:"Навіщо структурований запит?",meetingWhyText:"Він допомагає уточнити мету, відповідність і наступний крок.",supportTitle:"Підтримка інших проєктів та ініціатив",supportIntro:"За бажанням можна підтримати розвиток ідей, що роблять знання та корисні рішення доступнішими.",supportWaysTitle:"Способи підтримки",supportWaysText:"Оберіть зручний спосіб і перевірте реквізити перед переказом. Підтримка не дає автоматичного права на зустріч чи персональну послугу.",copy:"Копіювати",bankTransfer:"Банківський переказ · Discount Bank",accountLabel:"Рахунок",branchLabel:"Відділення",goldTransfer:"Переказ Zahav (IBAN)",supportCaution:"Переказ добровільний. Щоб надіслати запит, донат не потрібен. Перевірте реквізити одержувача перед переказом."},
+ru:{languageLabel:"Язык",navAppointment:"Подбор решения ←",appointmentTitle:"Запрос на связь или встречу",appointmentIntro:"Если мы случайно встретились, вы хотите познакомиться или обсудить конкретную тему — отправьте структурированный запрос. Это поможет обеим сторонам уточнить цель и сэкономить время.",appointmentFormTitle:"Что вы хотели бы обсудить?",appointmentFormIntro:"Выберите тип обращения; можно отметить несколько тем и добавить пояснение.",meetingTypeLabel:"Тип обращения",meetingProduct:"Подбор сайта или приложения",meetingBusiness:"Профессиональный или деловой разговор",meetingFriendly:"Неформальное знакомство",meetingCollab:"Идея сотрудничества",meetingSupport:"Поддержка проектов",meetingOther:"Другое",meetingGoalLabel:"Какова цель обращения?",meetingGoalPlaceholder:"Кратко опишите тему, ожидания от разговора и что вы уже пробовали.",yourName:"Имя",yourContact:"Телефон или способ связи",namePlaceholder:"Имя",contactPlaceholder:"Телефон (необязательно)",waitLabel:"Насколько вы готовы подождать?",waitFlexible:"Я гибок/гибкая; ответьте, когда будет возможность",waitWeeks:"Надеюсь получить ответ в ближайшие недели",waitWindow:"У меня есть конкретное время, укажу его в сообщении",contributionLabel:"Хотите предложить поддержку или оплату за выделенное время? (необязательно)",contributionNo:"Пока нет",contributionDonate:"Хочу поддержать проекты",contributionPaid:"Хочу обсудить оплату отдельной встречи",contributionOther:"Хочу предложить другую поддержку",availabilityNotice:"Важно: ответов нет по выходным, в шаббат, праздники и израильские праздничные дни. Быстрый ответ или немедленная встреча могут быть невозможны. Спасибо за терпение и ясность.",meetingEthics:"Структурированный запрос помогает согласовать ожидания, но не гарантирует встречу. Поддержка приветствуется, но не гарантирует ответа, приоритета или встречи.",prepareWhatsapp:"Подготовить сообщение WhatsApp ←",noObligation:"Нет обязательств по оплате или встрече.",waitlistTitle:"Лист ожидания WhatsApp",waitlistText:"Хотите попасть в список ожидания? Отправьте короткое сообщение с темой обращения.",joinWaitlist:"Вступить в список ожидания ←",waitlistNotice:"Включение в список не гарантирует дату или быстрый ответ. Не отправляйте чувствительные личные данные.",meetingWhyTitle:"Зачем нужен структурированный запрос?",meetingWhyText:"Он помогает уточнить цель разговора, соответствие и следующий шаг.",supportTitle:"Поддержка новых проектов и инициатив",supportIntro:"Можно поддержать разработку идей, которые делают знания, инструменты и решения доступнее. Поддержка добровольна и ценится.",supportWaysTitle:"Способы поддержки",supportWaysText:"Выберите удобный способ и проверьте реквизиты перед переводом. Поддержка не даёт автоматического права на встречу или личную услугу.",copy:"Копировать",bankTransfer:"Банковский перевод · Discount Bank",accountLabel:"Счёт",branchLabel:"Отделение",goldTransfer:"Перевод Zahav (IBAN)",supportCaution:"Перевод добровольный. Для отправки обращения донат не нужен. Проверьте данные получателя перед переводом."},
+es:{languageLabel:"Idioma",navAppointment:"Comprobar compatibilidad ←",appointmentTitle:"Solicitud de contacto o reunión",appointmentIntro:"Si nos conocimos por casualidad, quieres una presentación amistosa o tienes un tema concreto, envía una solicitud organizada. Ayudará a ambas partes a aclarar el objetivo y ahorrar tiempo.",appointmentFormTitle:"¿Qué te gustaría tratar?",appointmentFormIntro:"Elige el tipo de solicitud; puedes marcar varios temas y añadir una explicación.",meetingTypeLabel:"Tipo de solicitud",meetingProduct:"Encontrar una web o aplicación adecuada",meetingBusiness:"Conversación profesional o de negocios",meetingFriendly:"Conocernos de manera informal",meetingCollab:"Idea de colaboración",meetingSupport:"Apoyo a proyectos",meetingOther:"Otro",meetingGoalLabel:"¿Cuál es el objetivo de tu solicitud?",meetingGoalPlaceholder:"Describe brevemente el tema, qué esperas de la conversación y qué has intentado.",yourName:"Nombre",yourContact:"Teléfono o contacto preferido",namePlaceholder:"Nombre",contactPlaceholder:"Teléfono (opcional)",waitLabel:"¿Qué flexibilidad tienes con el tiempo de espera?",waitFlexible:"Tengo flexibilidad; responde cuando sea posible",waitWeeks:"Espero una respuesta en las próximas semanas",waitWindow:"Tengo una franja horaria concreta y la indicaré en el mensaje",contributionLabel:"¿Quieres ofrecer apoyo o compensación por tiempo dedicado? (opcional)",contributionNo:"Ahora no",contributionDonate:"Quiero apoyar los proyectos",contributionPaid:"Quiero hablar sobre compensar una reunión dedicada",contributionOther:"Quiero ofrecer otro tipo de apoyo",availabilityNotice:"Importante: no hay respuestas los fines de semana, Shabat, festivos ni festividades de Israel. Puede que no sea posible responder rápidamente o reunirse de inmediato. Gracias por tu paciencia y claridad.",meetingEthics:"Una solicitud organizada ayuda a aclarar expectativas, pero no garantiza una reunión. Las contribuciones son bienvenidas, pero no garantizan respuesta, prioridad ni reunión.",prepareWhatsapp:"Preparar mensaje de WhatsApp ←",noObligation:"Sin obligación de pagar ni reunirse.",waitlistTitle:"Lista de espera de WhatsApp",waitlistText:"¿Quieres apuntarte a la lista de espera? Envía un mensaje breve indicando el tema.",joinWaitlist:"Unirme a la lista de espera ←",waitlistNotice:"Apuntarse no garantiza una fecha ni una respuesta inmediata. No envíes información personal sensible.",meetingWhyTitle:"¿Por qué enviar una solicitud organizada?",meetingWhyText:"Ayuda a aclarar el objetivo, la compatibilidad y el siguiente paso adecuado.",supportTitle:"Apoya otros proyectos e iniciativas",supportIntro:"Puedes apoyar el desarrollo de ideas que hagan más accesibles el conocimiento, las herramientas y las soluciones. El apoyo es voluntario y se agradece.",supportWaysTitle:"Formas de apoyar",supportWaysText:"Elige el método que prefieras y verifica los datos antes de transferir. El apoyo no concede automáticamente una reunión o servicio personal.",copy:"Copiar",bankTransfer:"Transferencia bancaria · Discount Bank",accountLabel:"Cuenta",branchLabel:"Sucursal",goldTransfer:"Transferencia Zahav (IBAN)",supportCaution:"La transferencia es opcional. No hace falta donar para enviar una solicitud. Verifica los datos del destinatario antes de transferir."},
+fr:{languageLabel:"Langue",navAppointment:"Vérifier l’adéquation ←",appointmentTitle:"Demande de contact ou de rendez-vous",appointmentIntro:"Que nous nous soyons rencontrés par hasard, que vous souhaitiez faire connaissance ou discuter d’un sujet précis, envoyez une demande structurée. Elle aide chacun à clarifier l’objectif et à gagner du temps.",appointmentFormTitle:"De quoi souhaitez-vous parler ?",appointmentFormIntro:"Choisissez le type de demande. Plusieurs sujets peuvent être sélectionnés et vous pouvez ajouter des précisions.",meetingTypeLabel:"Type de demande",meetingProduct:"Choisir un site ou une application adaptés",meetingBusiness:"Échange professionnel ou commercial",meetingFriendly:"Faire connaissance de façon informelle",meetingCollab:"Idée de collaboration",meetingSupport:"Soutien aux projets",meetingOther:"Autre",meetingGoalLabel:"Quel est l’objectif de votre demande ?",meetingGoalPlaceholder:"Décrivez brièvement le sujet, vos attentes et ce que vous avez déjà essayé.",yourName:"Nom",yourContact:"Téléphone ou moyen de contact",namePlaceholder:"Prénom",contactPlaceholder:"Téléphone (facultatif)",waitLabel:"Quelle est votre flexibilité concernant le délai ?",waitFlexible:"Je suis flexible ; répondez lorsque possible",waitWeeks:"J’espère une réponse dans les prochaines semaines",waitWindow:"J’ai une période précise que j’indiquerai dans le message",contributionLabel:"Souhaitez-vous proposer un soutien ou une rémunération pour un temps dédié ? (facultatif)",contributionNo:"Pas pour le moment",contributionDonate:"Je souhaite soutenir les projets",contributionPaid:"Je souhaite discuter d’une rémunération pour un rendez-vous dédié",contributionOther:"Je souhaite proposer un autre soutien",availabilityNotice:"Important : pas de réponse les week-ends, pendant le Shabbat, les fêtes et les jours fériés israéliens. Une réponse rapide ou un rendez-vous immédiat peut être impossible. Merci pour votre patience et votre précision.",meetingEthics:"Une demande structurée aide à clarifier les attentes, mais ne garantit pas un rendez-vous. Les contributions sont bienvenues, sans garantir de réponse, de priorité ou de rendez-vous.",prepareWhatsapp:"Préparer le message WhatsApp ←",noObligation:"Aucun engagement de paiement ou de rendez-vous.",waitlistTitle:"Liste d’attente WhatsApp",waitlistText:"Vous souhaitez rejoindre la liste d’attente ? Envoyez un bref message indiquant le sujet.",joinWaitlist:"Rejoindre la liste d’attente ←",waitlistNotice:"L’inscription ne garantit ni date ni réponse immédiate. N’envoyez pas d’informations personnelles sensibles.",meetingWhyTitle:"Pourquoi une demande structurée ?",meetingWhyText:"Elle permet de clarifier l’objectif, l’adéquation et la prochaine étape.",supportTitle:"Soutenir d’autres projets et initiatives",supportIntro:"Vous pouvez soutenir le développement d’idées qui rendent les connaissances, outils et solutions plus accessibles. Le soutien est facultatif et apprécié.",supportWaysTitle:"Moyens de soutien",supportWaysText:"Choisissez la méthode qui vous convient et vérifiez les coordonnées avant le transfert. Le soutien ne donne pas automatiquement droit à un rendez-vous ou à un service personnel.",copy:"Copier",bankTransfer:"Virement bancaire · Discount Bank",accountLabel:"Compte",branchLabel:"Agence",goldTransfer:"Virement Zahav (IBAN)",supportCaution:"Le transfert est facultatif. Aucun don n’est nécessaire pour envoyer une demande. Vérifiez les coordonnées du bénéficiaire avant tout transfert."},
+de:{languageLabel:"Sprache",navAppointment:"Passung prüfen ←",appointmentTitle:"Kontakt- oder Terminanfrage",appointmentIntro:"Ob wir uns zufällig getroffen haben, Sie sich freundlich kennenlernen möchten oder ein konkretes Thema haben: Senden Sie eine strukturierte Anfrage. So können beide Seiten das Ziel klären und Zeit sparen.",appointmentFormTitle:"Worüber möchten Sie sprechen?",appointmentFormIntro:"Wählen Sie die Art der Anfrage. Mehrere Themen und eine zusätzliche Beschreibung sind möglich.",meetingTypeLabel:"Art der Anfrage",meetingProduct:"Passende Website oder App finden",meetingBusiness:"Berufliches oder geschäftliches Gespräch",meetingFriendly:"Unverbindliches Kennenlernen",meetingCollab:"Idee zur Zusammenarbeit",meetingSupport:"Projektunterstützung",meetingOther:"Sonstiges",meetingGoalLabel:"Was ist das Ziel Ihrer Anfrage?",meetingGoalPlaceholder:"Beschreiben Sie kurz das Thema, Ihre Erwartungen und was Sie bereits versucht haben.",yourName:"Name",yourContact:"Telefon oder bevorzugter Kontakt",namePlaceholder:"Vorname",contactPlaceholder:"Telefonnummer (optional)",waitLabel:"Wie flexibel sind Sie bei der Wartezeit?",waitFlexible:"Ich bin flexibel; antworten Sie, wenn es möglich ist",waitWeeks:"Ich hoffe auf eine Antwort in den nächsten Wochen",waitWindow:"Ich habe ein bestimmtes Zeitfenster und erwähne es in der Nachricht",contributionLabel:"Möchten Sie Unterstützung oder eine Vergütung für reservierte Zeit anbieten? (optional)",contributionNo:"Derzeit nicht",contributionDonate:"Ich möchte Projekte unterstützen",contributionPaid:"Ich möchte eine Vergütung für einen gezielten Termin besprechen",contributionOther:"Ich möchte andere Unterstützung anbieten",availabilityNotice:"Wichtig: Keine Antworten an Wochenenden, am Schabbat, an Feiertagen und israelischen Festtagen. Eine schnelle Antwort oder ein sofortiger Termin ist möglicherweise nicht möglich. Danke für Geduld und Klarheit.",meetingEthics:"Eine strukturierte Anfrage hilft, Erwartungen abzustimmen, garantiert aber keinen Termin. Unterstützung ist willkommen, garantiert jedoch weder Antwort noch Vorrang oder Treffen.",prepareWhatsapp:"WhatsApp-Nachricht vorbereiten ←",noObligation:"Keine Verpflichtung zu Zahlung oder Treffen.",waitlistTitle:"WhatsApp-Warteliste",waitlistText:"Möchten Sie auf die Warteliste? Senden Sie eine kurze Nachricht mit Ihrem Anliegen.",joinWaitlist:"Zur Warteliste hinzufügen ←",waitlistNotice:"Ein Eintrag garantiert weder einen Termin noch eine sofortige Antwort. Bitte senden Sie keine sensiblen persönlichen Daten.",meetingWhyTitle:"Warum eine strukturierte Anfrage?",meetingWhyText:"Sie hilft, Ziel, Passung und den nächsten sinnvollen Schritt zu klären.",supportTitle:"Weitere Projekte und Initiativen unterstützen",supportIntro:"Sie können die Entwicklung von Ideen unterstützen, die Wissen, Werkzeuge und Lösungen zugänglicher machen. Unterstützung ist freiwillig und wird geschätzt.",supportWaysTitle:"Unterstützungsmöglichkeiten",supportWaysText:"Wählen Sie eine passende Methode und prüfen Sie die Angaben vor der Überweisung. Unterstützung begründet keinen automatischen Anspruch auf ein Treffen oder persönliche Leistung.",copy:"Kopieren",bankTransfer:"Banküberweisung · Discount Bank",accountLabel:"Konto",branchLabel:"Filiale",goldTransfer:"Zahav-Überweisung (IBAN)",supportCaution:"Eine Überweisung ist freiwillig. Für eine Anfrage ist keine Spende nötig. Prüfen Sie die Empfängerdaten vor der Überweisung."},
+pt:{languageLabel:"Idioma",navAppointment:"Verificar compatibilidade ←",appointmentTitle:"Pedido de contato ou reunião",appointmentIntro:"Se nos encontramos por acaso, se deseja conhecer-me de forma amigável ou tem um assunto específico, envie um pedido organizado. Isso ajuda ambos a esclarecer o objetivo e poupar tempo.",appointmentFormTitle:"O que gostaria de conversar?",appointmentFormIntro:"Escolha o tipo de pedido; pode selecionar vários temas e acrescentar detalhes.",meetingTypeLabel:"Tipo de pedido",meetingProduct:"Encontrar um site ou aplicativo adequado",meetingBusiness:"Conversa profissional ou de negócios",meetingFriendly:"Conhecimento informal ou amigável",meetingCollab:"Ideia de colaboração",meetingSupport:"Apoio a projetos",meetingOther:"Outro",meetingGoalLabel:"Qual é o objetivo do seu pedido?",meetingGoalPlaceholder:"Descreva brevemente o tema, o que espera da conversa e o que já tentou.",yourName:"Nome",yourContact:"Telefone ou contato preferido",namePlaceholder:"Nome",contactPlaceholder:"Telefone (opcional)",waitLabel:"Quanta flexibilidade tem em relação ao tempo de espera?",waitFlexible:"Sou flexível; responda quando for possível",waitWeeks:"Espero uma resposta nas próximas semanas",waitWindow:"Tenho um período específico e vou indicá-lo na mensagem",contributionLabel:"Gostaria de oferecer apoio ou remuneração por tempo dedicado? (opcional)",contributionNo:"Não neste momento",contributionDonate:"Gostaria de apoiar os projetos",contributionPaid:"Gostaria de conversar sobre remuneração por uma reunião dedicada",contributionOther:"Gostaria de oferecer outro apoio",availabilityNotice:"Importante: não há respostas nos fins de semana, no Shabat, feriados e datas festivas de Israel. Uma resposta rápida ou reunião imediata pode não ser possível. Obrigado pela paciência e clareza.",meetingEthics:"Um pedido organizado ajuda a alinhar expectativas, mas não garante uma reunião. O apoio é bem-vindo, mas não garante resposta, prioridade ou reunião.",prepareWhatsapp:"Preparar mensagem do WhatsApp ←",noObligation:"Sem obrigação de pagamento ou reunião.",waitlistTitle:"Lista de espera do WhatsApp",waitlistText:"Quer entrar na lista de espera? Envie uma mensagem curta indicando o assunto.",joinWaitlist:"Entrar na lista de espera ←",waitlistNotice:"A inscrição não garante data nem resposta imediata. Não envie informações pessoais sensíveis.",meetingWhyTitle:"Por que enviar um pedido organizado?",meetingWhyText:"Ajuda a esclarecer o objetivo, a compatibilidade e o próximo passo.",supportTitle:"Apoie outros projetos e iniciativas",supportIntro:"Você pode apoiar o desenvolvimento de ideias que tornem conhecimentos, ferramentas e soluções mais acessíveis. O apoio é opcional e apreciado.",supportWaysTitle:"Formas de apoiar",supportWaysText:"Escolha o método mais conveniente e confira os dados antes de transferir. O apoio não dá direito automático a uma reunião ou serviço pessoal.",copy:"Copiar",bankTransfer:"Transferência bancária · Discount Bank",accountLabel:"Conta",branchLabel:"Agência",goldTransfer:"Transferência Zahav (IBAN)",supportCaution:"A transferência é opcional. Não é necessário doar para enviar um pedido. Verifique os dados do destinatário antes de transferir."},
+it:{languageLabel:"Lingua",navAppointment:"Verifica compatibilità ←",appointmentTitle:"Richiesta di contatto o incontro",appointmentIntro:"Se ci siamo incontrati per caso, desideri conoscerci in modo amichevole o hai un argomento specifico, invia una richiesta strutturata. Aiuterà entrambi a chiarire l’obiettivo e risparmiare tempo.",appointmentFormTitle:"Di cosa vorresti parlare?",appointmentFormIntro:"Scegli il tipo di richiesta; puoi selezionare più argomenti e aggiungere dettagli.",meetingTypeLabel:"Tipo di richiesta",meetingProduct:"Trovare un sito o un’app adatti",meetingBusiness:"Conversazione professionale o commerciale",meetingFriendly:"Conoscenza informale o amichevole",meetingCollab:"Idea di collaborazione",meetingSupport:"Sostegno ai progetti",meetingOther:"Altro",meetingGoalLabel:"Qual è lo scopo della richiesta?",meetingGoalPlaceholder:"Descrivi brevemente l’argomento, cosa ti aspetti dalla conversazione e cosa hai già provato.",yourName:"Nome",yourContact:"Telefono o contatto preferito",namePlaceholder:"Nome",contactPlaceholder:"Telefono (facoltativo)",waitLabel:"Quanto sei flessibile sui tempi di attesa?",waitFlexible:"Sono flessibile; rispondi quando possibile",waitWeeks:"Spero in una risposta nelle prossime settimane",waitWindow:"Ho una fascia oraria specifica e la indicherò nel messaggio",contributionLabel:"Vuoi offrire un sostegno o un compenso per tempo dedicato? (facoltativo)",contributionNo:"Non al momento",contributionDonate:"Vorrei sostenere i progetti",contributionPaid:"Vorrei discutere un compenso per un incontro dedicato",contributionOther:"Vorrei offrire un altro tipo di sostegno",availabilityNotice:"Importante: non si risponde nei fine settimana, durante lo Shabbat, le festività e le ricorrenze israeliane. Una risposta rapida o un incontro immediato potrebbero non essere possibili. Grazie per la pazienza e la chiarezza.",meetingEthics:"Una richiesta strutturata aiuta ad allineare le aspettative, ma non garantisce un incontro. Il sostegno è apprezzato, ma non garantisce risposta, priorità o incontro.",prepareWhatsapp:"Prepara il messaggio WhatsApp ←",noObligation:"Nessun obbligo di pagamento o incontro.",waitlistTitle:"Lista d’attesa WhatsApp",waitlistText:"Vuoi entrare nella lista d’attesa? Invia un breve messaggio indicando l’argomento.",joinWaitlist:"Unisciti alla lista d’attesa ←",waitlistNotice:"L’iscrizione non garantisce una data o una risposta immediata. Non inviare informazioni personali sensibili.",meetingWhyTitle:"Perché inviare una richiesta strutturata?",meetingWhyText:"Aiuta a chiarire obiettivo, compatibilità e passo successivo.",supportTitle:"Sostieni altri progetti e iniziative",supportIntro:"Puoi sostenere lo sviluppo di idee che rendono più accessibili conoscenze, strumenti e soluzioni. Il sostegno è facoltativo e apprezzato.",supportWaysTitle:"Modi per sostenere",supportWaysText:"Scegli il metodo che preferisci e verifica i dati prima del trasferimento. Il sostegno non dà automaticamente diritto a un incontro o servizio personale.",copy:"Copia",bankTransfer:"Bonifico bancario · Discount Bank",accountLabel:"Conto",branchLabel:"Filiale",goldTransfer:"Trasferimento Zahav (IBAN)",supportCaution:"Il trasferimento è facoltativo. Non è necessario donare per inviare una richiesta. Verifica i dati del destinatario prima del trasferimento."}
+};
+function applyLanguage(lang){
+ const dict=UI_TRANSLATIONS[lang]||UI_TRANSLATIONS.he;
+ document.documentElement.lang=lang;
+ document.documentElement.dir=lang==="he"||lang==="ar"?"rtl":"ltr";
+ document.querySelectorAll("[data-i18n]").forEach(el=>{const k=el.dataset.i18n;if(dict[k])el.textContent=dict[k]});
+ document.querySelectorAll("[data-i18n-placeholder]").forEach(el=>{const k=el.dataset.i18nPlaceholder;if(dict[k])el.placeholder=dict[k]});
+}
+document.getElementById("languageSelect").addEventListener("change",e=>applyLanguage(e.target.value));
+document.querySelectorAll("[data-copy]").forEach(btn=>btn.addEventListener("click",async()=>{
+ const text=btn.dataset.copy, old=btn.textContent;
+ try{await navigator.clipboard.writeText(text);btn.textContent=(UI_TRANSLATIONS[document.getElementById("languageSelect").value]||UI_TRANSLATIONS.he).copy+" ✓";}
+ catch(e){prompt("Copy this value:",text);}
+ setTimeout(()=>btn.textContent=old,1600);
+}));
+document.getElementById("meetingForm").addEventListener("submit",e=>{
+ e.preventDefault();
+ const types=[...document.querySelectorAll('input[name="meetingType"]:checked')].map(x=>x.value);
+ const goal=document.getElementById("meetingGoal").value.trim();
+ const name=document.getElementById("meetingName").value.trim();
+ const contact=document.getElementById("meetingContact").value.trim();
+ const wait=document.getElementById("meetingWait").value;
+ const contribution=document.getElementById("meetingContribution").value;
+ const message=`שלום דוד חזי, אני משאיר/ה פנייה מסודרת.\n\nסוג הפנייה: ${types.join(", ")||"לא צוין"}\nמטרת הפנייה: ${goal||"אשמח לפרט בשיחה"}\nשם: ${name||"לא צוין"}\nטלפון/דרך חזרה: ${contact||"לא צוין"}\nגמישות בזמן המתנה: ${wait}\nתמיכה/תגמול: ${contribution}\n\nאני מבין/ה שהפנייה אינה מבטיחה פגישה או מענה מיידי ושאין מענה בסופי שבוע, בשבתות, בחגים ובמועדי ישראל.`;
+ window.open("https://wa.me/972587887515?text="+encodeURIComponent(message),"_blank","noopener");
+});
+</script>
+
+
+<script>
+document.getElementById("quickAppointmentForm").addEventListener("submit",function(e){
+  e.preventDefault();
+  const name=document.getElementById("quickName").value.trim();
+  const contact=document.getElementById("quickContact").value.trim();
+  const reason=document.getElementById("quickReason").value.trim();
+  const msg=`שלום דוד חזי, אשמח לתאם פגישה.\nשם: ${name||"לא צוין"}\nטלפון: ${contact||"לא צוין"}\nמטרת הפנייה: ${reason||"אשמח לפרט בהמשך"}\n\nאני מבין/ה שייתכן זמן המתנה ושאין מענה בסופי שבוע, בשבתות, בחגים ובמועדי ישראל.`;
+  window.open("https://wa.me/972587887515?text="+encodeURIComponent(msg),"_blank","noopener");
+});
+let qrImageUrl="";
+document.getElementById("makeQr").addEventListener("click",()=>{
+  const url=document.getElementById("publicUrl").value.trim();
+  const status=document.getElementById("qrStatus"), output=document.getElementById("qrOutput");
+  if(!/^https?:\/\/.+/i.test(url)){status.textContent="יש להזין כתובת אתר ציבורית מלאה שמתחילה ב־https:// או http://.";return;}
+  qrImageUrl="https://api.qrserver.com/v1/create-qr-code/?size=350x350&data="+encodeURIComponent(url);
+  output.innerHTML="";
+  const img=document.createElement("img");img.src=qrImageUrl;img.alt="קוד QR לשיתוף הפלטפורמה";img.width=176;img.height=176;
+  img.onerror=()=>{status.textContent="לא ניתן לטעון את קוד ה־QR כרגע. בדוק את החיבור לאינטרנט ונסה שוב.";};
+  img.onload=()=>{status.textContent="קוד ה־QR מוכן. אפשר להציג אותו למסך סריקה או לשמור כתמונה.";};
+  output.appendChild(img);
+});
+document.getElementById("downloadQr").addEventListener("click",async()=>{
+  if(!qrImageUrl){document.getElementById("qrStatus").textContent="תחילה יש ליצור קוד QR עבור כתובת ציבורית.";return;}
+  try{
+    const response=await fetch(qrImageUrl);const blob=await response.blob();const objectUrl=URL.createObjectURL(blob);
+    const a=document.createElement("a");a.href=objectUrl;a.download="david-hazi-appointment-qr.png";document.body.appendChild(a);a.click();a.remove();URL.revokeObjectURL(objectUrl);
+  }catch(e){window.open(qrImageUrl,"_blank","noopener");document.getElementById("qrStatus").textContent="פתחנו את תמונת ה־QR בחלון חדש; אפשר לשמור אותה משם.";}
+});
+</script>
+
+</body>
+</html>
